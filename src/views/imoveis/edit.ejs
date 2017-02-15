@@ -1,0 +1,47 @@
+ <% include ../partials/header %>
+
+<div class="container">
+
+  <section class="col-md-9">
+    <h3>Editar <%= imovel._id %></h3>
+
+    <form id="update-form" method="post">
+      <input type="hidden" name="id" value="<%= imovel._id %>">
+      <p>
+        <label for="bairro">Bairro</label><br>
+        <input type="text" class="text" name="bairro" value="<%= imovel.bairro %>">
+      </p>
+      <p>
+        <label for="area">Área (m²)</label><br>
+        <input type="number" class="text" name="area" value="<%= imovel.area %>">
+      </p>
+      <p>
+        <label for="preco">Preço (R$)</label><br>
+        <input type="number" class="text" name="preco" value="<%= imovel.preco %>">
+      </p>
+      <p>
+        <label for="dormitorios">Dormitórios</label><br>
+        <input type="number" class="text" name="dormitorios" value="<%= imovel.dormitorios %>">
+      </p>
+      <p>
+        <label for="banheiros">Banheiros</label><br>
+        <input type="number" class="text" name="banheiros" value="<%= imovel.banheiros %>">
+      </p>
+      <p>
+        <label for="vagas-garagem">Vagas na Garagem</label><br>
+        <input type="number" class="text" name="vagasGaragem" value="<%= imovel.vagasGaragem %>">
+      </p>
+      <p>
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar formulário">
+      </p>
+    </form>
+
+    <a href="/">Voltar</a> |
+    <a href="/imoveis/<%= imovel._id %>/excluir">Excluir</a>
+
+  </section>
+
+</div>
+
+ <% include ../partials/footer %>

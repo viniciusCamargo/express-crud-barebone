@@ -1,0 +1,34 @@
+ <% include ../partials/header %>
+
+<div class="container">
+
+  <section class="col-md-9">
+
+
+    <h3>Excluir <%= imovel._id %></h3>
+    <div class="imovel">
+      <strong>Bairro: <%= imovel.bairro %></strong>
+      <p>Área: <%= imovel.area %>m²</p>
+      <p class="preco"><%= imovel.preco %></p>
+      <p>Dormitórios: <%= imovel.dormitorios %></p>
+      <p>Banheiros: <%= imovel.banheiros %></p>
+      <p>Vagas na garagem: <%= imovel.vagasGaragem %></p>
+    </div>
+
+    <div class="error">
+      <strong>Cuidado</strong>: você está prestes a <strong>excluir</strong>
+       o documento <strong><%= imovel._id %></strong>.
+    </div>
+    <a href="/">Voltar</a> |
+    <a href="/imoveis/<%= imovel._id %>/editar">Editar</a> |
+
+    <form id="delete-form" method="post">
+      <input type="hidden" name="id" value="<%= imovel._id %>">
+      <input type="submit" class="non-button" value="Excluir">
+    </form>
+
+  </section>
+
+</div>
+
+ <% include ../partials/footer %>

@@ -1,0 +1,28 @@
+ <% include ../partials/header %>
+
+<div class="container">
+  <% // include ../partials/searchBar %>
+
+  <section class="col-md-9">
+    <h3><%= imoveis.length %> documents found</h3>
+    <a class="link-new" href="/imoveis/criar">Novo</a>
+
+    <% imoveis.map(imovel => { %>
+    <div class="imovel">
+      <a href="imoveis/<%= imovel._id %>">
+        <strong>Bairro: <%= imovel.bairro %></strong>
+      </a>
+      <p>Área: <%= imovel.area %>m²</p>
+      <p class="preco"><%= imovel.preco %></p>
+      <p>Dormitórios: <%= imovel.dormitorios %></p>
+      <p>Banheiros: <%= imovel.banheiros %></p>
+      <p>Vagas na garagem: <%= imovel.vagasGaragem %></p>
+      <a href="/imoveis/<%= imovel._id %>/editar">Editar</a> |
+      <a href="/imoveis/<%= imovel._id %>/excluir">Excluir</a>
+    </div>
+    <% }) %>
+
+  </section>
+</div>
+
+ <% include ../partials/footer %>

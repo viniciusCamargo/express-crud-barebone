@@ -1,0 +1,41 @@
+input.text, input.title, textarea {
+  width: 218px
+}
+.container {
+  margin-top: 2em
+}
+.imovel {
+  margin-bottom: 2em
+}
+.imovel p {
+  margin: 0
+}
+ul.pagination {
+  list-style: none;
+  padding: 0;
+}
+ul.pagination li {
+  display: inline;
+  padding-right: 1em;
+}
+/*       TODO       */
+ul.pagination a.active {
+  color: #23527c;
+  text-decoration: none;
+  font-weight: bold;
+}
+a.link-new {
+  display: inline-block;
+  margin: 1em 0;
+}
+#delete-form { display: inline-block }
+.non-button:focus,
+.non-button:hover {color:#09f;}
+.non-button {
+  background: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color:#06c;
+  text-decoration:underline;
+}

@@ -1,0 +1,45 @@
+ <% include ../partials/header %>
+
+<div class="container">
+
+  <section class="col-md-9">
+    <h3>Novo</h3>
+
+    <form id="update-form" method="post">
+      <p>
+        <label for="bairro">Bairro</label><br>
+        <input type="text" class="text" name="bairro">
+      </p>
+      <p>
+        <label for="area">Área (m²)</label><br>
+        <input type="number" class="text" name="area">
+      </p>
+      <p>
+        <label for="preco">Preço (R$)</label><br>
+        <input type="number" class="text" name="preco">
+      </p>
+      <p>
+        <label for="dormitorios">Dormitórios</label><br>
+        <input type="number" class="text" name="dormitorios">
+      </p>
+      <p>
+        <label for="banheiros">Banheiros</label><br>
+        <input type="number" class="text" name="banheiros">
+      </p>
+      <p>
+        <label for="vagas-garagem">Vagas na Garagem</label><br>
+        <input type="number" class="text" name="vagasGaragem">
+      </p>
+      <p>
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar formulário">
+      </p>
+    </form>
+
+    <a href="/">Voltar</a>
+
+  </section>
+
+</div>
+
+ <% include ../partials/footer %>
