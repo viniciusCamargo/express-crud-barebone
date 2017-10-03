@@ -1,4 +1,6 @@
 # Express CRUD barebone
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/viniciusCamargo/express-crud-barebone.svg)](https://greenkeeper.io/)
 Simple Express CRUD with no JS on the client
 
 - There's no JS on the client side
